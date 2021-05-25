@@ -29,7 +29,7 @@ const Works=()=> {
           <h1 style={{color:"hsl(34, 87%, 54%)",marginRight:"7%"}}>5    </h1> <h1> Membres</h1>
         </div>
         <div className="Container">
-        <h1 style={{color:"hsl(34, 87%, 54%)", marginLeft:"-2%"}}> &nbsp;+10   &nbsp;</h1> <h1> Projet</h1>
+        <h1 style={{color:"hsl(34, 87%, 54%)", marginLeft:"-2%"}}> &nbsp;+10   &nbsp;</h1> <h1> Projets</h1>
         </div>
         <div className="Container">
           
