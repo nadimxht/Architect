@@ -1,0 +1,151 @@
+@import "../../global.scss";
+
+.intro {
+  background-color: white;
+  display: flex;
+
+  @include mobile{
+    flex-direction: row;
+    
+  }
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+
+    .imgContainer {
+      width: 700px;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
+
+      @include mobile{
+        align-items: flex-start;
+        background-color: white;
+      border-radius: 100%;
+      width: 100%;
+      height: 100%;
+      
+      }
+
+      img {
+        height: 100%;
+        width: 85%;
+        
+
+        @include mobile{
+          height: 100%;
+          
+        }
+      }
+    }
+  }
+  .right {
+    flex: 0.2;
+    position: relative;
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+
+      @include mobile{
+        padding-left: 0;
+        justify-content: center;
+      }
+      
+      h1 {
+        font-size: 60px;
+        margin: 10px 0;
+
+        @include mobile{
+          font-size: 40px;
+        }
+      }
+      h2 {
+        font-size: 35px;
+      }
+      h3 {
+        font-size: 30px;
+
+        @include mobile{
+          font-size: 20px;
+        }
+
+        span {
+          font-size: inherit;
+          font-weight: 700;
+          color: #dc143c;
+        }
+
+        .ityped-cursor {
+          animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+      }
+    }
+   
+    a {
+      position: absolute;
+      bottom: 10px;
+      left: 40%;
+
+      img {
+        width: 30px;
+        animation: arrowBlink 2s infinite;
+      }
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+.right1{
+  flex: 0.3;
+  position: relative;
+
+}
+.UX{
+  width: 100%;
+  height: 80%;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(247, 68, 68);
+  border-top-right-radius:0;
+  border-top-left-radius:30%;
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:80%;
+  top: -20%;
+  @include mobile{
+    top: -35%;
+  }
+
+}
+
+// .Item{
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgb(247, 68, 68);
+//   border-top-right-radius:0;
+//   border-top-left-radius:0%;
+//   border-bottom-right-radius:0;
+//   border-bottom-left-radius:50%;
+//   margin-left: 40%;
+// } 

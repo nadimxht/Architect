@@ -1,0 +1,55 @@
+@import "../../global.scss";
+.pro1 {
+  background-color: white;
+  display: flex;
+}
+.pro{
+ 
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://persohype.com/wp-content/uploads/revslider/home-4-slide-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+}
+.Container{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  
+}
+.Container h1{
+  margin-left: 20px;
+  font-size: 70px;
+  font-weight: 600;
+  color: white;
+  @include mobile{
+    font-size: 30px;
+  font-weight: 600;
+  }
+}
+.pro2{
+  position: relative;
+
+}
+.UX2{
+  width: 150%;
+  height: 80%;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(247, 68, 68);
+  border-top-right-radius:20%;
+  border-top-left-radius:30%;
+  border-bottom-right-radius:20%;
+  border-bottom-left-radius:80%;
+   right: 50%;
+  @include mobile{
+    top: -35%;
+  }
+
+}
